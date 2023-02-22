@@ -3,7 +3,6 @@ QTY=$2
 EMAILID=$3
 PAMENTREF=$4
   pwd
-  printf -v new_counter "%02d" $counter
   mkdir $1-$3-$2-$4
   mv  ./main.tf $1-$3-$2-$4
   mv variables.tf $1-$3-$2-$4
