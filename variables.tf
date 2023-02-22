@@ -1,6 +1,6 @@
 variable project_id {
   type        = string
-  default     = "cisco-sdwan-eveng "
+  default     = "cisco-sdwan-eveng"
   description = "description"
 }
 
