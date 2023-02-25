@@ -31,7 +31,7 @@ resource "google_compute_subnetwork" "subnet1" {
 
 resource "google_compute_instance" "default" {
   count        = var.qty
-  name         = "${google_compute_subnetwork.subnet1[count.index].name}-${vm}-${count.index}"
+  name         = "${google_compute_subnetwork.subnet1[count.index].name}-vm-${count.index + 1}"
   machine_type = var.machine_type
 
   tags = ["foo", "bar"]
