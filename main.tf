@@ -45,11 +45,6 @@ resource "google_compute_instance" "default" {
     }
   }
 
-  // Local SSD disk
-  scratch_disk {
-    interface = "SCSI"
-  }
-
   network_interface {
     network = google_compute_network.vpc_network[count.index].name
     subnetwork = google_compute_subnetwork.subnet1[count.index].name
