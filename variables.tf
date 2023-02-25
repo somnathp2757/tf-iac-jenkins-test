@@ -12,8 +12,8 @@ variable region {
 
 variable zone {
   type        = string
-  default     = "zone name"
-  description = "b"
+  default     = "b"
+  description = "Zone Name"
 }
 
 variable qty {
