@@ -26,7 +26,7 @@ resource "google_compute_subnetwork" "subnet1" {
   name          = "${var.email_id}-${count.index + 1}-subnet1"
   ip_cidr_range = "10.${count.index + 1}.0.0/16"
   region        = var.region
-  network       = google_compute_network.vpc_network[count.index]
+  network       = google_compute_network.vpc_network[count.index].name
 }
 
 resource "google_compute_instance" "default" {
