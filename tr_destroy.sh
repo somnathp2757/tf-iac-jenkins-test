@@ -6,4 +6,4 @@ EMAILID=$3
 PAMENTREF=$4
   pwd
   cd $1-$3-$2-$4
-  terraform destroy -var region=$1 -var vpc_name=$3-$2 -auto-approve 
+  terraform destroy -var region=$1 -var email_id=$3 -var qty=$2 -auto-approve
