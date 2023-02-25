@@ -8,4 +8,4 @@ PAMENTREF=$4
   mv variables.tf $1-$3-$2-$4
   cd $1-$3-$2-$4
   terraform init
-  terraform apply -var region=$1 -var vpc_name=$3-$2 -auto-approve 
+  terraform apply -var region=$1 -var email_id=$3 -var qty=$2 -auto-approve
