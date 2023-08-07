@@ -1,6 +1,6 @@
 variable project_id {
   type        = string
-  default     = "cisco-sdwan-eveng"
+  default     = "shared-project-1-392805"
   description = "description"
 }
 
@@ -19,6 +19,7 @@ variable zone {
 variable qty {
   type        = number
   description = "number of vpc"
+default = 1
 }
 
 variable email_id {
@@ -29,6 +30,6 @@ variable email_id {
 variable machine_type {
   type        = string
   description = "number of vpc"
-  default     = "e2-medium"
+  default     = "e2-micro"
 }
 
