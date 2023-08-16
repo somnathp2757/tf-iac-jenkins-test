@@ -7,7 +7,8 @@ steps:
           echo "*************** TERRAFOM PLAN ******************"
           
           echo "*************************************************"
-          terraform plan || exit 1
-          cd ../../
+          terraform init
+          terraform plan
+         
 options:
   logging: CLOUD_LOGGING_ONLY
