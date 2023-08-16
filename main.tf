@@ -1,5 +1,10 @@
 
 terraform {
+  backend = "gcs"
+  config = {
+    bucket  = "aditya-terraform-state"
+    prefix  = "prod"
+  }
   required_providers {
     google = {
       source = "hashicorp/google"
