@@ -25,6 +25,7 @@ default = 1
 variable email_id {
   type        = string
   description = "number of vpc"
+default = "ad@gmail.com"
 }
 
 variable machine_type {
