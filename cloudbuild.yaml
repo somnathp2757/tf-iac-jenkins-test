@@ -12,3 +12,5 @@ steps:
           echo "*************************************************"
           terraform plan || exit 1
           cd ../../
+options:
+  logging: CLOUD_LOGGING_ONLY
