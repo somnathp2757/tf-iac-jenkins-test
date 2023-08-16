@@ -1,7 +1,8 @@
 - id: 'tf plan'
   name: 'hashicorp/terraform:1.0.0'
   entrypoint: 'sh'
-  args:
+  script: |
+          #!/usr/bin/env bash
 
           echo ""
           echo "*************** TERRAFOM PLAN ******************"
