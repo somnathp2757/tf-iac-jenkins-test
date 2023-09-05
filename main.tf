@@ -16,8 +16,6 @@ backend "gcs" {
   }
 }
 
-
-
 provider "google" {
 
   project = var.project_id
@@ -66,4 +64,5 @@ resource "google_compute_instance" "default" {
   }
 
   metadata_startup_script = "echo hi > /test.txt"
+
 }
