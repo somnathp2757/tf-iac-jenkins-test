@@ -1,6 +1,6 @@
 variable project_id {
   type        = string
-  default     = "shared-project-1-392805"
+  default     = "somnath-398106"
   description = "description"
 }
 
