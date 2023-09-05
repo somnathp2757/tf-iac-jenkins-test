@@ -11,7 +11,7 @@ terraform {
 
 terraform{
 backend "gcs" {
-    bucket  = "aditya-terraform-state"
+    bucket  = "my-som-buc"
     prefix  = "terraform/state"
   }
 }
